@@ -24,22 +24,24 @@ body {
 
 h1 {
   font-size: 3.8rem;
-  margin-top: 0;
 }
 h2 {
   font-size: 3.6rem;
 }
 h3 {
   font-size: 3rem;
+  text-align: center;
 }
 h4 {
   font-size: 2.8rem;
 }
-
+p {
+  text-align: center;
+}
 /*UTILIDADES*/
 .section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border: 1px solid #000;
+  margin: 1rem auto;
 }
 
 /*HEADER*/
@@ -78,13 +80,58 @@ h4 {
   height: 100vh; /*toma el alto de la pantallas*/
   min-height: 5rem;
 }
+
 .section-banner h1 {
-  width: 45%;
+  width: 40%;
   text-transform: uppercase;
   color: #153b56;
-  line-height: 1;
-  border: 1px solid black;
-  position: relative;
+  line-height: 1.2;
+  position: absolute;
+  top: 35rem;
+  left: 9rem;
+}
+/*ABOUT-US*/
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us {
+  width: 100%;
+}
+.mision {
+  width: 50%;
+  text-align: center;
+}
+.vision {
+  width: 50%;
+  text-align: center;
+}
+/*MAIN/SERVICES*/
+.container-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service {
+  height: 60rem;
+  width: 48%;
+  border: 0.1rem solid #000;
+  text-align: center;
+  padding: 3rem;
+  margin: 1rem;
+}
+.container-services:last-child {
+  justify-content: center;
 }
 
+/*COURSES*/
+.section-courses {
+  text-align: center;
+}
 /*FOOTER*/
+.site-footer {
+  background: #153b56;
+  height: 12rem;
+  color: #fff;
+  padding: auto;
+}
